@@ -1,0 +1,153 @@
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-top {
+    background: transparent !important;
+}
+.navbar-brand span:hover{
+    color:white;
+
+}
+.borderBottom{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    animation-name: border;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+@keyframes border{
+    20%{background: linear-gradient(to left, #ff6a00, #ee0979, #1a5dec);}
+    40%{background: linear-gradient(to left,#1a5dec,#ff6a00,#ee0979);}
+    60%{background: linear-gradient(to left, #ee0979, #1a5dec,#ff6a00);}
+    80%{background: linear-gradient(to left, #ff6a00, #ee0979, #1a5dec);}
+    100%{background: linear-gradient(to left,#1a5dec,#ff6a00,#ee0979);}
+}
+
+/* particle starting */
+
+#particles-js {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color:white;
+    background-image:url('images/3.jpg');
+  }
+
+
+  canvas {
+    display: block;
+    vertical-align: none !important;
+    margin-top:-213px !important;
+  }
+  
+
+/* end particle */
+
+
+/* navbar bottom border slider */
+.slider {
+    position: absolute;
+    display:block;
+    left: 0;
+    top:-05%;
+    margin:0 auto;
+    height: 1px;
+    background: linear-gradient(to right, #24c6dc, #1a5dec);
+    width: 0%;
+    transition: width 1s;
+
+}
+.name {
+    position:relative; 
+}
+.name:hover> .slider {
+    width: 100%;
+
+}
+/* end navbar bottom border slider */
+
+
+.container-fluid h1{
+    position: relative;
+    font-size: 300%;
+    top:40%;
+    margin-left: 05%;
+    padding:0%;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+/* slide anurag name border */
+.slide {
+    position: absolute;
+    display:block;
+    left: 0;
+    top:93%;
+    margin:0 auto;
+    height: 1px;
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    width: 0%;
+    transition: width 1s;
+}
+
+.name1 {
+    position:relative; 
+}
+.name1:hover> .slide11{
+    width: 60%;
+}
+.name1:hover> .slide{
+    width: 100%;
+}
+/* end anurag name slide */
+
+.container-fluid h3{
+    position: relative;
+    font-size: 130%;
+    top:40%;
+    margin-left: 05%;
+    padding-top:01%;
+    letter-spacing: .3rem;
+
+}
+/* slide UI/UX name border */
+.slide1 {
+    position: absolute;
+    display:block;
+    right: 0;
+    top:100%;
+    margin:0 auto;
+    height: 1px;
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+    width: 0%;
+    transition: width 1s;
+}
+.name2 {
+    position:relative; 
+}
+.name2:hover> .slide1 {
+    width: 100%;
+}
+
+/* button */
+.btn-custom{
+    border-radius: 1%;
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+@keyframes button{
+    from{background: linear-gradient(to right, #ee0979, #ff6a00);}
+    to{background: linear-gradient(to right, #24c6dc, #514a9d);}
+}
+.btn-custom:hover{
+    border-radius: 1%;
+    color: white;
+    font-weight: bold;
+    animation-name: button;
+    animation-duration: 1S;
+    transition: all ease 1s;
+    animation-fill-mode: forwards;
+
+}
